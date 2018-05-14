@@ -99,19 +99,21 @@ tmpfs           7.8G     0  7.8G   0% /dev/shm
 
 [root@ip-172-31-16-48 ec2-user]# vi /etc/rc.d/rc.local
 [root@ip-172-31-16-48 ec2-user]# cat /etc/rc.d/rc.local
-#!/bin/sh
-#
-# This script will be executed *after* all the other init scripts.
-# You can put your own initialization stuff in here if you don't
-# want to do the full Sys V style init stuff.
+!/bin/sh
 
-# bz 707364
+This script will be executed *after* all the other init scripts.
+You can put your own initialization stuff in here if you don't
+want to do the full Sys V style init stuff.
+
+bz 707364
 if [ ! -f /etc/blkid/blkid.tab ] ; then
         blkid /dev/xvda &>/dev/null
 fi
 
 touch /var/lock/subsys/local
+
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
+
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
 
 ### 5) List your network interface configuration
@@ -205,9 +207,9 @@ Resolving Dependencies
 
 Dependencies Resolved
 
-==================================================================================
+\==================================================================================
  Package             Arch          Version                   Repository      Size
-==================================================================================
+\==================================================================================
 Installing:
  nscd                x86_64        2.12-1.209.el6_9.2        updates        232 k
 Updating for dependencies:
@@ -215,8 +217,8 @@ Updating for dependencies:
  glibc               x86_64        2.12-1.209.el6_9.2        updates        3.8 M
  glibc-common        x86_64        2.12-1.209.el6_9.2        updates         14 M
 
-Transaction Summary
-==================================================================================
+\Transaction Summary
+\==================================================================================
 Install       1 Package(s)
 Upgrade       3 Package(s)
 
