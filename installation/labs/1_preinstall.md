@@ -119,7 +119,7 @@ echo never > /sys/kernel/mm/transparent_hugepage/defrag <br>
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4 <br>
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6 <br>
 ec2-13-250-104-43.ap-southeast-1.compute.amazonaws.com  namenode <br>
-ec2-13-250-121-131.ap-southeast-1.compute.amazonaws.com cm <br>
+ec2-52-221-200-239.ap-southeast-1.compute.amazonaws.com cm <br>
 ec2-54-169-75-184.ap-southeast-1.compute.amazonaws.com  datanode1 <br>
 ec2-54-251-176-98.ap-southeast-1.compute.amazonaws.com  datanode2 <br>
 ec2-54-255-205-156.ap-southeast-1.compute.amazonaws.com datanode3 <br>
