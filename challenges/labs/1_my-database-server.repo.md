@@ -32,7 +32,10 @@ oracle-j2sdk1.8-1.8.0+update121-1.x86_64
 
 
 ## The command hostname -f and its output
-
+```
+[root@ip-172-31-31-108 ~]# hostname -f
+ip-172-31-31-108.ap-southeast-1.compute.internal
+```
 ## The command mysql -u <user> -p<password> -e "status;" and its output
 
 MariaDB [(none)]> show databases;
