@@ -26,10 +26,10 @@ oracle-j2sdk1.7.x86_64        1.7.0+update67-1  cloudera-manager-5.13.3
 ```
 
 ## Oracle JDK 1.8 Installed
-
+```
 [root@ip-172-31-31-108 yum.repos.d]# rpm -qa | grep oracle
 oracle-j2sdk1.8-1.8.0+update121-1.x86_64
-
+```
 
 ## The command hostname -f and its output
 ```
