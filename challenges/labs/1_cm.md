@@ -1,4 +1,4 @@
-#Copy of cloudera-manager.repo
+# Copy of cloudera-manager.repo
 ```
 [cloudera-manager]
 # Packages for Cloudera Manager, Version 5, on RedHat or CentOS 7 x86_64

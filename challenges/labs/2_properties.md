@@ -1,4 +1,4 @@
-#Use the scm_prepare_database.sh script to create the db.properties file
+# Use the scm_prepare_database.sh script to create the db.properties file
 ```
 [root@ip-172-31-28-237 yum.repos.d]# sudo /usr/share/cmf/schema/scm_prepare_database.sh mysql -h ip-172-31-31-108.ap-southeast-1.compute.internal scm scm
 Enter SCM password:
