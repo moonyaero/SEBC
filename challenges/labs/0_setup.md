@@ -3,11 +3,11 @@ Cloud Provider : AWS
 ## Instance List
 |Instance Name | DNS | IP| OS |
 |------|----|----|---|
-|challenges:CM|ec2-54-169-189-117.ap-southeast-1.compute.amazonaws.com|54.169.189.117| Redhat 7.5|
-|challenges:DN1|ec2-52-77-241-203.ap-southeast-1.compute.amazonaws.com|52.77.241.203| Redhat 7.5|
-|challenges:DN2|ec2-52-77-237-244.ap-southeast-1.compute.amazonaws.com |52.77.237.244| Redhat 7.5|
-|challenges:DN3|ec2-13-229-248-50.ap-southeast-1.compute.amazonaws.com|13.229.248.50| Redhat 7.5|
-|challenges:NN|ec2-52-221-216-46.ap-southeast-1.compute.amazonaws.com|52.221.216.46| Redhat 7.5|
+|challenges:NN|ec2-54-169-189-117.ap-southeast-1.compute.amazonaws.com|54.169.189.117| Redhat 7.5|
+|challenges:CM|ec2-52-77-241-203.ap-southeast-1.compute.amazonaws.com|52.77.241.203| Redhat 7.5|
+|challenges:DN1|ec2-52-77-237-244|ec2-52-77-237-244.ap-southeast-1.compute.amazonaws.com |52.77.237.244| Redhat 7.5|
+|challenges:DN2|ec2-13-229-248-50.ap-southeast-1.compute.amazonaws.com|13.229.248.50| Redhat 7.5|
+|challenges:DN3|ec2-52-221-216-46.ap-southeast-1.compute.amazonaws.com|52.221.216.46| Redhat 7.5|
 
 ## File System Capacity
 ```
