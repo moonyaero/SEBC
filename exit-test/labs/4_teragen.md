@@ -82,5 +82,81 @@ user    0m7.454s
 sys     0m0.399s
 
 ```
+# Output of hdfs dfs -ls /user/groot/tgen
+```
+[root@ip-172-31-29-43 ~]# sudo -u hdfs hdfs dfs -ls /user/groot/tgen
+Found 41 items
+-rw-r--r--   3 groot supergroup          0 2018-05-18 05:54 /user/groot/tgen/_SUCCESS
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00000
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00001
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00002
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00003
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00004
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00005
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00006
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00007
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00008
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00009
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00010
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:52 /user/groot/tgen/part-m-00011
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00012
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00013
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00014
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00015
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00016
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00017
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00018
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00019
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00020
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00021
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00022
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00023
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00024
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00025
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00026
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00027
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00028
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00029
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00030
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00031
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00032
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00033
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00034
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00035
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00036
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:53 /user/groot/tgen/part-m-00037
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:54 /user/groot/tgen/part-m-00038
+-rw-r--r--   3 groot supergroup  163840000 2018-05-18 05:54 /user/groot/tgen/part-m-00039
+
+```
+# Output of hadoop fsck -blocks /user/groot 
+
+```
+[root@ip-172-31-29-43 ~]# sudo -u hdfs hadoop fsck -blocks /user/groot
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Connecting to namenode via http://ip-172-31-27-72.ap-southeast-1.compute.internal:50070
+FSCK started by hdfs (auth:SIMPLE) from /172.31.29.43 for path /user/groot at Fri May 18 05:56:55 UTC 2018
+.........................................Status: HEALTHY
+ Total size:    6553600000 B
+ Total dirs:    3
+ Total files:   41
+ Total symlinks:                0
+ Total blocks (validated):      120 (avg. block size 54613333 B)
+ Minimally replicated blocks:   120 (100.0 %)
+ Over-replicated blocks:        0 (0.0 %)
+ Under-replicated blocks:       0 (0.0 %)
+ Mis-replicated blocks:         0 (0.0 %)
+ Default replication factor:    3
+ Average block replication:     3.0
+ Corrupt blocks:                0
+ Missing replicas:              0 (0.0 %)
+ Number of data-nodes:          3
+ Number of racks:               1
+FSCK ended at Fri May 18 05:56:55 UTC 2018 in 6 milliseconds
+
+
+The filesystem under path '/user/groot' is HEALTHY
 
 ```
