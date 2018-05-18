@@ -118,6 +118,8 @@
     * The command and output from the CM API call `../api/v11/clusters/<githubName>/services`
 * Install the Hive sample data using Hue (IMPORTANT: You should use only this dataset for Challenge 6)
     * Copy a Hue screen that shows the tables are loaded to `challenges/labs/3_hue_hive.png`
+* Add the output of the following to `3_deploymentjson.md`
+    * The command and output from the CM API call `../api/v14/cm/deployment`
 * Push this work to GitHub and label the Issue `review`
 * Assign the issue to the instructor
 
@@ -177,12 +179,12 @@
   * Label it `started`
 * Use Cloudera Manager to install and enable Sentry
 * Configure both Hive & Impala to use Sentry
-* Screen-capture the CM pages proving this and save it to `6_sentry_hive.png` and `6_sentry_impele.png`
+* Screen-capture the CM pages proving this and save it to `6_sentry_hive.png` and `6_sentry_impala.png`
 * Create a role called `banned` that cannot access the sample data (that you loaded in `Challenge 3`)
   * Assign the `blackorder` group to this role
 * Create a role for `protectors` that can read the database (loaded in `Challenge 3`)
   * Assign the `avengers` group to this role
-* Use `impele-shell` to select ten records from `web_logs`
+* Use `impala-shell` to select ten records from `web_logs`
 * Use `impala-shell` to select ten records from `customers`
 * Capture the impala-shell text and save to `6_impalashell.md`
 * Screen-capture the results for impala-shell and save to `6_impalashell.png`
